@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  app:
+    image: gotodo
+    build:
+      context: .
+      target: dev
+    volumes:
+      - .:/app
+    ports:
+      - "18000:80"
